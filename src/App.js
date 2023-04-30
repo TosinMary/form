@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -40,8 +39,10 @@ const App = () =>  {
   }
   return (
     <div className="App">
-      <section className='container flex justify-content-center align-items-center mt-2 text-white w-50'>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <section className='container   mt-2 text-white'>
+        <div className='row flex flex justify-content-center align-items-center'>
+          <div className='col col-lg-8 col-md-12'>
+        <form onSubmit={handleSubmit(onSubmit)} className='p-4'>
       <h3 className='text-center'>Sign In</h3>
       <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Full Name</label>
@@ -74,9 +75,12 @@ const App = () =>  {
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+</div>
 </section>
+   
     </div>
+  
   );
 }
-
 export default App;
