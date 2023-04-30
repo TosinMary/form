@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Code Setup for my Form
+* put this command to install react-hook-form and yup "npx install react-hook-form yup".
+* also do "npm install @hookform/resolvers.
+* install bootstrap css by inputing this command "npm install react-bootstrap bootstrap".
+* Add this import to our App.js file or index.js file as the case may be "import 'bootstrap/dist/css/bootstrap.min.css';
+* for the resolver package, we will do "npm install @hookform/resolvers"
+
